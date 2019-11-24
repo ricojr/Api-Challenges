@@ -13,10 +13,10 @@ app.appendChild(container)
 var request = new XMLHttpRequest()
     // create a request var and assign a new XMLhtprqt... object to it
 
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+request.open('GET', 'http://gateway.marvel.com/v1/public/comics', true)
     // open a new connection, using the GET request on the URL endpoint
     //Then we'll open a new connection with the open() method - in the arguments we'll specify the type of request as GET as well as the URL of the API endpoint. The request completes and we can access the data inside the onload function. When we're done, we'll send the request.
-
+console.log('GET')
 request.onload = function() {
     // begin accessing JSON data here
     var data = JSON.parse(this.response)
